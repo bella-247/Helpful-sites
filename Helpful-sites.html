@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Helpful Websites</h1>
+
+    <input type="text" id="search-box" placeholder="Search here..">
+    
+    <ul class="sites-list-container"></ul>
+
+    <div class="editors-container">
+        <div class="editors site-adder">
+            <h2 class="title">Add your site</h2>
+            <form action="">
+                <form-group>
+                    <label for="site-name">Site Name</label>
+                    <input type="text" id="add-site-name" required>
+                </form-group>
+                <form-group>
+                    <label for="site-address">Site Address</label>
+                    <input type="text" id="add-site-address" required>
+                </form-group>
+                <button-group>
+                    <button id="add-btn" class="form-btns">Add</button>
+                </button-group>
+            </form>
+        </div>
+
+        <div class="editors site-modifier">
+            <h2 class="title">Edit the site</h2>
+            <form action="">
+                <form-group>
+                    <label for="site-name">Site Name</label>
+                    <input type="text" id="modify-site-name" required>
+                </form-group>
+                <form-group>
+                    <label for="site-address">Site Address</label>
+                    <input type="text" id="modify-site-address" required>
+                </form-group>
+                <button-group>
+                    <button id ="save-btn" class="form-btns">Save</button>
+                    <input type="button" id="delete-btn" class="form-btns" value="Delete">
+                </button-group>
+            </form>
+        </div>
+    </div>
+
+    <div class="add-site-btn" title="Add sites">+</div>
+
+</body>
+</html>
